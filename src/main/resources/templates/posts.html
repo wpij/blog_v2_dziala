@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>
+    Moje posty
+</h3>
+<h3>
+    ====================================
+</h3>
+
+<div th:each="post : ${posts}">
+    <h2 th:text="${post.title}"></h2>
+    <h4 th:text="${post.content}"></h4>
+    <h3>
+        ----------------------------------------------
+    </h3>
+</div>
+</body>
+</html>
